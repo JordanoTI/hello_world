@@ -14,8 +14,8 @@ app.get("/blog", function (req, res) {
     res.send("Blog")
 })
 
-app.get("/ola/:name/:func", function (req, res) {
-    res.send(req.params)
+app.get("/ola/:name/:cargo", function (req, res) {
+    res.send("Ola: " + req.params.name + " Seu cargo e: " + req.params.cargo)
 })
 
 app.listen(8181, function () {
